@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sliding_in_and_up_form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/980c8ca5cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="form_container sign_up_container">
+        <form novalidate action="#">
+          <h1>Create Account</h1>
+          <div class="social_container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+
+          <span>or use your email for registration</span>
+          <p>
+            <input type="text" required id="name1" placeholder="Name" />
+            <span class="error" aria-live="polite"></span>
+          </p>
+          <p>
+            <input type="text" required id="country" placeholder="Country" />
+            <span class="error" aria-live="polite"></span>
+          </p>
+          <p>
+            <input
+              type="email"
+              id="email"
+              name="mail"
+              required
+              minlength="8"
+              placeholder="Email"
+            />
+            <span class="error" aria-live="polite"></span>
+          </p>
+          <p>
+            <input
+              type="number"
+              required
+              
+              id="zip_code"
+              placeholder="Zip Code"
+            /><span class="error" aria-live="polite"></span>
+          </p>
+          <p>
+            <input
+              type="password"
+              required
+              
+              id="password"
+              placeholder="Password"
+            /><span class="error" aria-live="polite"></span>
+          </p>
+          <p>
+            <input
+              type="password"
+              required
+              
+              id="confirm_password"
+              placeholder="Confirm Password"
+            /><span class="error" aria-live="polite"></span>
+          </p>
+
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form_container sign_in_container">
+        <form novalidate action="#">
+          <h1>Sign In</h1>
+          <div class="social_container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>Or use your account</span>
+          <p>
+            <input
+              type="email"
+              name="mail"
+              required
+              minlength="8"
+              placeholder="Email"
+            />
+          </p>
+          <p>
+            <input
+              type="password"
+              required
+              minlength="8"
+              placeholder="Password"
+            />
+          </p>
+
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay_container">
+        <div class="overlay">
+          <div class="overlay_panel overlay_left">
+            <h1>Welcome Back!</h1>
+            <p class="text">
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="sign_in">Sign In</button>
+          </div>
+          <div class="overlay_panel overlay_right">
+            <h1>Hello, Friend</h1>
+            <p class="text">
+              Enter your personal details and start journey with us
+            </p>
+            <button class="ghost" id="sign_up">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
